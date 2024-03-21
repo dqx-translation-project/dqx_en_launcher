@@ -1,0 +1,58 @@
+---
+name: "build"
+
+on:
+  push:
+    branches:
+      - main
+      - test
+    tags:
+      - "v*.*.*"
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [windows-latest]
+    name: "Build executable"
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Checkout dqx-translation-project/dqx_translations
+        uses: actions/checkout@v4
+        with:
+          repository: 'dqx-translation-project/dqx_translations'
+          path: 'dqx_translations'
+
+      - name: Checkout dqx-translation-project/dqx_dat_dump
+        uses: actions/checkout@v4
+        with:
+          repository: 'dqx-translation-project/dqx_dat_dump'
+          path: 'dqx_dat_dump'
+
+      - name: Install Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r dqx_dat_dump/requirements.txt
+
+      - name: Port translations to new ETP
+        working-directory: dqx_dat_dump/tools/packing
+        run: |
+          python pack_etp.py -j {{ github.workspace }}/dqx_translations/json/_lang/en/adhoc_error_text_2.json -e {{ github.workspace }}/assets/ETP/ETP266.bin
+          python pack_etp.py -j {{ github.workspace }}/dqx_translations/json/_lang/en/adhoc_game_settings.json -e {{ github.workspace }}/assets/ETP/ETP270.bin
+
+      - name: Move new ETPs to assets
+        working-directory: assets/ETP
+        run: Move-Item {{ github.workspace }}/dqx_translations/json/_lang/en/*.bin . -Force
+
+      - name: Build launcher exe
+        working-directory: app
+        run: |
+          port_assets.bat
+          cat DQXLauncher.log

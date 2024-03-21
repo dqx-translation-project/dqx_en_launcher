@@ -1,0 +1,63 @@
+[FILENAMES]
+Open=../assets/DQXLauncher.exe
+Save=DQXLauncher.exe
+Log=DQXLauncher.log
+[COMMANDS]
+-modify ../assets/Bitmap/Bitmap164.bmp, Bitmap, 164
+-modify ../assets/PNG/PNG172.png, PNG, 172
+-modify ../assets/PNG/PNG173.png, PNG, 173
+-modify ../assets/PNG/PNG174.png, PNG, 174
+-modify ../assets/PNG/PNG175.png, PNG, 175
+-modify ../assets/PNG/PNG176.png, PNG, 176
+-modify ../assets/PNG/PNG177.png, PNG, 177
+-modify ../assets/PNG/PNG178.png, PNG, 178
+-modify ../assets/PNG/PNG179.png, PNG, 179
+-modify ../assets/PNG/PNG180.png, PNG, 180
+-modify ../assets/PNG/PNG181.png, PNG, 181
+-modify ../assets/PNG/PNG182.png, PNG, 182
+-modify ../assets/PNG/PNG183.png, PNG, 183
+-modify ../assets/PNG/PNG184.png, PNG, 184
+-modify ../assets/PNG/PNG185.png, PNG, 185
+-modify ../assets/PNG/PNG186.png, PNG, 186
+-modify ../assets/PNG/PNG187.png, PNG, 187
+-modify ../assets/PNG/PNG190.png, PNG, 190
+-modify ../assets/PNG/PNG191.png, PNG, 191
+-modify ../assets/PNG/PNG192.png, PNG, 192
+-modify ../assets/PNG/PNG193.png, PNG, 193
+-modify ../assets/PNG/PNG195.png, PNG, 195
+-modify ../assets/PNG/PNG196.png, PNG, 196
+-modify ../assets/PNG/PNG197.png, PNG, 197
+-modify ../assets/PNG/PNG198.png, PNG, 198
+-modify ../assets/PNG/PNG202.png, PNG, 202
+-modify ../assets/PNG/PNG213.png, PNG, 213
+-modify ../assets/PNG/PNG214.png, PNG, 214
+-modify ../assets/PNG/PNG219.png, PNG, 219
+-modify ../assets/PNG/PNG220.png, PNG, 220
+-modify ../assets/PNG/PNG221.png, PNG, 221
+-modify ../assets/PNG/PNG222.png, PNG, 222
+-modify ../assets/PNG/PNG225.png, PNG, 225
+-modify ../assets/PNG/PNG226.png, PNG, 226
+-modify ../assets/PNG/PNG232.png, PNG, 232
+-modify ../assets/PNG/PNG263.png, PNG, 263
+-modify ../assets/PNG/PNG264.png, PNG, 264
+-modify ../assets/PNG/PNG265.png, PNG, 265
+-modify ../assets/StringTable/StringTable7.res, STRINGTABLE,7,1041
+-modify ../assets/StringTable/StringTable8.res, STRINGTABLE,8,1041
+-modify ../assets/StringTable/StringTable9.res, STRINGTABLE,9,1041
+-modify ../assets/StringTable/StringTable10.res, STRINGTABLE,10,1041
+-modify ../assets/StringTable/StringTable11.res, STRINGTABLE,11,1041
+-modify ../assets/Dialog/Dialog102.res, DIALOG,102,1041
+-modify ../assets/Dialog/Dialog157.res, DIALOG,157,1041
+-modify ../assets/Dialog/Dialog168.res, DIALOG,168,1041
+-modify ../assets/Dialog/Dialog209.res, DIALOG,209,1041
+-modify ../assets/Dialog/Dialog217.res, DIALOG,217,1041
+-modify ../assets/Dialog/Dialog218.res, DIALOG,218,1041
+-modify ../assets/Dialog/Dialog229.res, DIALOG,229,1041
+-modify ../assets/Dialog/Dialog230.res, DIALOG,230,1041
+-modify ../assets/Dialog/Dialog246.res, DIALOG,246,1041
+-modify ../assets/Dialog/Dialog247.res, DIALOG,247,1041
+-modify ../assets/Dialog/Dialog248.res, DIALOG,248,1041
+-modify ../assets/Dialog/Dialog253.res, DIALOG,253,1041
+-modify ../assets/Dialog/Dialog30721.res, DIALOG,30721,1041
+-modify ../assets/ETP/ETP266.bin, ETP, 266
+-modify ../assets/ETP/ETP270.bin, ETP, 270

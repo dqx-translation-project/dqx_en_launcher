@@ -1,0 +1,4 @@
+app/*.json
+app/*.exe
+app/*.log
+venv
