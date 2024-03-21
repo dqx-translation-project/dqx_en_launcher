@@ -50,7 +50,7 @@ jobs:
         working-directory: assets/ETP
         run: |
           Remove-Item ${{ github.workspace }}/assets/ETP/*.bin -Force
-          Move-Item ${{ github.workspace }}/dqx_translations/json/_lang/en/*.bin .
+          Move-Item ${{ github.workspace }}/dqx_dat_dump/tools/packing/new_etp/*.bin .
 
       - name: Build launcher exe
         working-directory: app
