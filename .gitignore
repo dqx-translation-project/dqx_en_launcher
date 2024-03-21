@@ -1,4 +1,4 @@
 app/*.json
 app/*.exe
 app/*.log
-venv
+utilities/*.ini
