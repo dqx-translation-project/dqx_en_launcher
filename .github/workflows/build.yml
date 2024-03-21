@@ -53,5 +53,5 @@ jobs:
       - name: Build launcher exe
         working-directory: app
         run: |
-          port_assets.bat
+          .\port_assets.bat
           cat DQXLauncher.log
