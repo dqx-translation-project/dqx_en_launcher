@@ -48,7 +48,9 @@ jobs:
 
       - name: Move new ETPs to assets
         working-directory: assets/ETP
-        run: Move-Item ${{ github.workspace }}/dqx_translations/json/_lang/en/*.bin . -Force
+        run: |
+          Remove-Item ${{ github.workspace }}/assets/ETP/*.bin -Force
+          Move-Item ${{ github.workspace }}/dqx_translations/json/_lang/en/*.bin .
 
       - name: Build launcher exe
         working-directory: app
