@@ -2,6 +2,8 @@
 
 Modifies the DQX launcher with a number of English assets to make for a more readable experience to an English audience.
 
+Public docs found here: https://dqx-translation-project.github.io/dqxlauncher/
+
 # ci
 
 This builds on pushes to main and tags.
